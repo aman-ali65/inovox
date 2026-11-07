@@ -115,153 +115,63 @@ export default function Team() {
   return (
     <>
       <main className="wrap">
-        {/* Centered Hero Section */}
-        <section className="sec hero ">
+        {/* Premium Two-Column Hero Section */}
+        <section className="sec hero team-hero-sec hero-two-col-sec">
           <Header activePage="team" />
-          <div className="hero-in">
-            <span className="tag">Our Team &amp; Leadership</span>
-            <h1>
-              The Minds Driving <span className="accent">Digital Excellence</span>
-            </h1>
-            <p className="sm">
-              Meet our multidisciplinary team of software architects, product designers, cloud engineers, and strategists dedicated to creating innovative, high-impact digital experiences.
-            </p>
-            <div className="btns">
-              <Link className="btn " to="/contact">
-                Join Our Team{' '}
-                <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-              <Link className="btn light" to="/contact">
-                Start a Project{' '}
-                <span className="play">
-                  <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
+          <div className="hero-container-card team-hero-card">
+            <div className="hero-content-col">
+              <span className="tag">Our Team &amp; Leadership</span>
+              <h1 className="hero-title">
+                The Minds Driving <span className="accent">Digital Excellence</span>
+              </h1>
+              <p className="hero-desc">
+                Meet our multidisciplinary team of software architects, product designers, cloud engineers, and strategists dedicated to creating innovative, high-impact digital experiences.
+              </p>
+              <div className="hero-btns">
+                <Link className="btn btn-dark" to="/contact">
+                  Join Our Team{' '}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
-                </span>
-              </Link>
+                </Link>
+                <Link className="btn light" to="/contact">
+                  Start a Project{' '}
+                  <span className="play">
+                    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+              <div className="hero-stats">
+                <div className="hero-stat-item">
+                  <CountUp value="25+" />
+                  <span>Dedicated Specialists</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="8+" />
+                  <span>Years Experience</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="120+" />
+                  <span>Delivered Projects</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="100%" />
+                  <span>In-House Team</span>
+                </div>
+              </div>
             </div>
-            <div className="stats">
-              <div>
-                <CountUp value="25+" />
-                <span>Dedicated Specialists</span>
-              </div>
-              <div>
-                <CountUp value="8+" />
-                <span>Years Experience</span>
-              </div>
-              <div>
-                <CountUp value="120+" />
-                <span>Delivered Projects</span>
-              </div>
-              <div>
-                <CountUp value="100%" />
-                <span>In-House Team</span>
-              </div>
+            <div className="hero-visual-col team-visual-col">
+              <img
+                className="hero-3d-visual"
+                src="/assets/img/hero-real/hero-team-real.jpg"
+                alt="Multidisciplinary Engineering Team Collaborating on Code"
+                loading="eager"
+              />
             </div>
           </div>
         </section>
-
-        {/* Founder & Executive Spotlight */}
-        <FadeInSection>
-          <section className="sec">
-            <div className="rowhead">
-              <div>
-                <span className="tag">Leadership Spotlight</span>
-                <h2>
-                  Executive <span className="accent">Vision &amp; Direction</span>
-                </h2>
-              </div>
-              <p style={{ maxWidth: '440px' }}>
-                Guided by experienced leadership, we foster a culture where high engineering standards meet user empathy to build software that lasts.
-              </p>
-            </div>
-
-            <div className="founder-spotlight">
-              <div className="founder-img-col">
-                <img src="/assets/img/member-1.jpg" alt="Aman Ali" />
-                <span className="founder-badge">Founder &amp; CEO</span>
-              </div>
-              <div className="founder-content">
-                <h3>Aman Ali</h3>
-                <span className="founder-role">Founder, Chief Executive Officer &amp; Principal Architect</span>
-                <p style={{ fontSize: '14.5px', color: 'var(--text)', lineHeight: 1.65 }}>
-                  Aman founded Invsol Tech with the fundamental premise that modern enterprises require digital partners who combine deep strategic insight with uncompromising technical craftsmanship. Under his direction, the company has delivered over 120 successful digital solutions globally.
-                </p>
-
-                <div className="founder-quote">
-                  “Our mission is to bridge technical excellence with purposeful digital design, empowering ambitious brands to lead their industries with certainty and scale.”
-                </div>
-
-                <div className="founder-duties-list">
-                  <div className="founder-duty-item">
-                    <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4" />
-                    </svg>
-                    <span>Strategic vision and organizational roadmap</span>
-                  </div>
-                  <div className="founder-duty-item">
-                    <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4" />
-                    </svg>
-                    <span>Executive client advisory &amp; technology leadership</span>
-                  </div>
-                  <div className="founder-duty-item">
-                    <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4" />
-                    </svg>
-                    <span>High-throughput system architecture review</span>
-                  </div>
-                  <div className="founder-duty-item">
-                    <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4" />
-                    </svg>
-                    <span>Mentorship and engineering talent development</span>
-                  </div>
-                </div>
-
-                <div style={{ display: 'flex', gap: '10px', alignItems: 'center', marginTop: '16px', flexWrap: 'wrap' }}>
-                  <Link className="btn sm blue" to="/contact">
-                    Connect With Aman{' '}
-                    <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-linkedin"
-                    aria-label="Aman Ali on LinkedIn"
-                  >
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <rect x="2" y="2" width="20" height="20" rx="4" />
-                      <path d="M7 10v7" />
-                      <circle cx="7" cy="6.5" r="1.2" fill="currentColor" stroke="none" />
-                      <path d="M11 17v-4a2.2 2.2 0 0 1 4.4 0V17" />
-                      <path d="M11 10v7" />
-                    </svg>
-                    LinkedIn
-                  </a>
-
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-github"
-                    aria-label="Aman Ali on GitHub"
-                  >
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInSection>
 
         {/* Team Profiles & Responsibilities */}
         <FadeInSection>

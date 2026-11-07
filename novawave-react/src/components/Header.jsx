@@ -97,25 +97,11 @@ export default function Header({ activePage = 'home' }) {
               if (window.innerWidth > 900) setIsCompanyOpen(false);
             }}
           >
-            <div
-              className="nav-dropdown-trigger"
-              onClick={(e) => {
-                if (window.innerWidth <= 900) {
-                  e.preventDefault();
-                  setIsCompanyOpen((prev) => !prev);
-                }
-              }}
-            >
+            <div className="nav-dropdown-trigger">
               <Link
                 to="/company"
                 className={`nav-trigger-label ${isCompanyActive ? 'on' : ''}`}
-                onClick={(e) => {
-                  if (window.innerWidth <= 900) {
-                    e.preventDefault();
-                  } else {
-                    closeNav();
-                  }
-                }}
+                onClick={closeNav}
               >
                 Company
               </Link>
@@ -137,6 +123,14 @@ export default function Header({ activePage = 'home' }) {
             </div>
 
             <div className={`dropdown-menu ${isCompanyOpen ? 'show' : ''}`}>
+              <Link
+                to="/company"
+                className={`dropdown-item ${activePage === 'company' ? 'on' : ''}`}
+                onClick={closeNav}
+              >
+                Company Overview
+              </Link>
+
               <Link
                 to="/about"
                 className={`dropdown-item ${activePage === 'about' ? 'on' : ''}`}

@@ -11,7 +11,6 @@ import Contact from './pages/Contact';
 import ProjectDetail from './pages/ProjectDetail';
 import BlogDetail from './pages/BlogDetail';
 import WhatsAppButton from './components/WhatsAppButton';
-import CircuitBackground from './components/CircuitBackground';
 import useScrollReveal from './hooks/useScrollReveal';
 
 function ScrollHandler() {
@@ -37,8 +36,6 @@ export default function App() {
   return (
     <>
       <ScrollHandler />
-      {/* Global Digital Circuit Board Background Effect */}
-      <CircuitBackground />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/index.html" element={<Home />} />

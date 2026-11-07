@@ -13,46 +13,56 @@ export default function Services() {
   return (
     <>
       <main className="wrap">
-        {/* Centered Hero without Hero Image */}
-        <section className="sec hero ">
+        {/* Premium Two-Column Hero Section */}
+        <section className="sec hero services-hero-sec hero-two-col-sec">
           <Header activePage="services" />
-          <div className="hero-in">
-            <span className="tag">Our Services</span>
-            <h1>
-              Digital Solutions for <span className="accent">Modern Brands</span>
-            </h1>
-            <p className="sm">
-              We combine strategy, design, and technology to create digital solutions that help businesses grow, engage their audience, and make a lasting impact.
-            </p>
-            <div className="btns">
-              <Link className="btn " to="/contact">
-                Start a Project{' '}
-                <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-              <a className="btn light" href="#process">
-                How We Work{' '}
-                <span className="play">
-                  <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
+          <div className="hero-container-card services-hero-card">
+            <div className="hero-content-col">
+              <span className="tag">Our Services</span>
+              <h1 className="hero-title">
+                Digital Solutions for <span className="accent">Modern Brands</span>
+              </h1>
+              <p className="hero-desc">
+                We combine strategy, design, and technology to create digital solutions that help businesses grow, engage their audience, and make a lasting impact.
+              </p>
+              <div className="hero-btns">
+                <Link className="btn btn-dark" to="/contact">
+                  Start a Project{' '}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
-                </span>
-              </a>
+                </Link>
+                <a className="btn light" href="#process">
+                  How We Work{' '}
+                  <span className="play">
+                    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div className="hero-stats">
+                <div className="hero-stat-item">
+                  <CountUp value="120+" />
+                  <span>Projects Completed</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="80+" />
+                  <span>Happy Clients</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="4.9/5" />
+                  <span>Client Satisfaction</span>
+                </div>
+              </div>
             </div>
-            <div className="stats">
-              <div>
-                <CountUp value="120+" />
-                <span>Projects Completed</span>
-              </div>
-              <div>
-                <CountUp value="80+" />
-                <span>Happy Clients</span>
-              </div>
-              <div>
-                <CountUp value="4.9/5" />
-                <span>Client Satisfaction</span>
-              </div>
+            <div className="hero-visual-col services-visual-col">
+              <img
+                className="hero-3d-visual"
+                src="/assets/img/hero-real/hero-services-real.jpg"
+                alt="Full-Stack Engineering & Code Development Workspace"
+                loading="eager"
+              />
             </div>
           </div>
         </section>

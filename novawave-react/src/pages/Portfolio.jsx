@@ -32,8 +32,8 @@ export default function Portfolio() {
   return (
     <>
       <main className="wrap">
-        {/* Centered Hero Section */}
-        <section className="sec hero ">
+        {/* Premium Two-Column Hero Section */}
+        <section className="sec hero portfolio-hero-sec hero-two-col-sec">
           <Header activePage="portfolio" />
 
           {/* Toast Notification for Live Preview */}
@@ -56,47 +56,57 @@ export default function Portfolio() {
             </div>
           )}
 
-          <div className="hero-in">
-            <span className="tag">Selected Case Studies</span>
-            <h1>
-              Transforming Vision into <span className="accent">High-Impact Products</span>
-            </h1>
-            <p className="sm">
-              Explore our verified client solutions. We engineer modern digital products that blend clean, human-centered UI with resilient, scalable technical foundations.
-            </p>
-            <div className="btns">
-              <Link className="btn " to="/contact">
-                Start a Project{' '}
-                <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-              <Link className="btn light" to="/services">
-                Explore Services{' '}
-                <span className="play">
-                  <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
+          <div className="hero-container-card portfolio-hero-card">
+            <div className="hero-content-col">
+              <span className="tag">Selected Case Studies</span>
+              <h1 className="hero-title">
+                Transforming Vision into <span className="accent">High-Impact Products</span>
+              </h1>
+              <p className="hero-desc">
+                Explore our verified client solutions. We engineer modern digital products that blend clean, human-centered UI with resilient, scalable technical foundations.
+              </p>
+              <div className="hero-btns">
+                <Link className="btn btn-dark" to="/contact">
+                  Start a Project{' '}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
-                </span>
-              </Link>
+                </Link>
+                <Link className="btn light" to="/services">
+                  Explore Services{' '}
+                  <span className="play">
+                    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+              <div className="hero-stats">
+                <div className="hero-stat-item">
+                  <CountUp value="120+" />
+                  <span>Delivered Projects</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="$45M+" />
+                  <span>Client Value Generated</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="99.4%" />
+                  <span>On-Time Milestone Delivery</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="4.9/5" />
+                  <span>Client Satisfaction Rating</span>
+                </div>
+              </div>
             </div>
-            <div className="stats">
-              <div>
-                <CountUp value="120+" />
-                <span>Delivered Projects</span>
-              </div>
-              <div>
-                <CountUp value="$45M+" />
-                <span>Client Value Generated</span>
-              </div>
-              <div>
-                <CountUp value="99.4%" />
-                <span>On-Time Milestone Delivery</span>
-              </div>
-              <div>
-                <CountUp value="4.9/5" />
-                <span>Client Satisfaction Rating</span>
-              </div>
+            <div className="hero-visual-col portfolio-visual-col">
+              <img
+                className="hero-3d-visual"
+                src="/assets/img/hero-real/hero-portfolio-real.jpg"
+                alt="Enterprise SaaS Web Application Dashboard & Digital Products"
+                loading="eager"
+              />
             </div>
           </div>
         </section>

@@ -7,18 +7,17 @@ import { useEffect, useRef, useState } from 'react';
  * Reveals only once and respects prefers-reduced-motion.
  */
 export default function FadeInSection({ children, className = '', delay = 0, ...props }) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(() => {
+    if (typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return true;
+    }
+    return false;
+  });
   const domRef = useRef(null);
 
   useEffect(() => {
     const node = domRef.current;
-    if (!node) return;
-
-    // Respect reduced-motion preferences
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setIsVisible(true);
-      return;
-    }
+    if (!node || isVisible) return;
 
     if (typeof IntersectionObserver === 'undefined') {
       setIsVisible(true);
@@ -41,8 +40,8 @@ export default function FadeInSection({ children, className = '', delay = 0, ...
       },
       {
         root: null,
-        rootMargin: '0px 0px -36px 0px',
-        threshold: 0.05,
+        rootMargin: '50px 0px 50px 0px',
+        threshold: 0.01,
       }
     );
 
@@ -51,7 +50,7 @@ export default function FadeInSection({ children, className = '', delay = 0, ...
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [isVisible]);
 
   return (
     <div

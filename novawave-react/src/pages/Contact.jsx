@@ -73,59 +73,69 @@ export default function Contact() {
   return (
     <>
       <main className="wrap">
-        {/* Centered Hero without Hero Image */}
-        <section className="sec hero ">
+        {/* Premium Two-Column Hero Section */}
+        <section className="sec hero contact-hero-sec hero-two-col-sec">
           <Header activePage="contact" />
-          <div className="hero-in">
-            <span className="tag">Get In Touch</span>
-            <h1>
-              Let’s Create Something Great <span className="accent">Together</span>
-            </h1>
-            <p className="sm">
-              Have a project in mind? We’d love to hear from you. Share your ideas, and our team will get back to you with the best solutions to bring your vision to life.
-            </p>
-            <div className="btns" style={{ marginBottom: '24px' }}>
-              <a className="btn " href="#contact-form">
-                Start a Project{' '}
-                <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
+          <div className="hero-container-card contact-hero-card">
+            <div className="hero-content-col">
+              <span className="tag">Get In Touch</span>
+              <h1 className="hero-title">
+                Let’s Create Something Great <span className="accent">Together</span>
+              </h1>
+              <p className="hero-desc">
+                Have a project in mind? We’d love to hear from you. Share your ideas, and our team will get back to you with the best solutions to bring your vision to life.
+              </p>
+              <div className="hero-btns" style={{ marginBottom: '32px' }}>
+                <a className="btn btn-dark" href="#contact-form">
+                  Start a Project{' '}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div className="feat3" style={{ justifyContent: 'flex-start', marginTop: '0', width: '100%' }}>
+                <div>
+                  <span className="ico">
+                    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M13 2 3 14h9l-1 8 10-12h-9z" />
+                    </svg>
+                  </span>
+                  <span>
+                    <b>Quick Response</b>
+                    Within 24 Hours
+                  </span>
+                </div>
+                <div>
+                  <span className="ico">
+                    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" />
+                    </svg>
+                  </span>
+                  <span>
+                    <b>Expert Team</b>
+                    Ready to Help
+                  </span>
+                </div>
+                <div>
+                  <span className="ico">
+                    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4" />
+                    </svg>
+                  </span>
+                  <span>
+                    <b>Confidential</b>
+                    Your ideas are safe
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className="feat3">
-              <div>
-                <span className="ico">
-                  <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M13 2 3 14h9l-1 8 10-12h-9z" />
-                  </svg>
-                </span>
-                <span>
-                  <b>Quick Response</b>
-                  Within 24 Hours
-                </span>
-              </div>
-              <div>
-                <span className="ico">
-                  <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" />
-                  </svg>
-                </span>
-                <span>
-                  <b>Expert Team</b>
-                  Ready to Help
-                </span>
-              </div>
-              <div>
-                <span className="ico">
-                  <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4" />
-                  </svg>
-                </span>
-                <span>
-                  <b>Confidential</b>
-                  Your ideas are safe
-                </span>
-              </div>
+            <div className="hero-visual-col contact-visual-col">
+              <img
+                className="hero-3d-visual"
+                src="/assets/img/hero-real/hero-contact-real.jpg"
+                alt="Professional Client Consultation & Partnership Meeting"
+                loading="eager"
+              />
             </div>
           </div>
         </section>

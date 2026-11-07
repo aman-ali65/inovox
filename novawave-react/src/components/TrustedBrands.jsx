@@ -8,7 +8,7 @@ const BRANDS = [
     id: 'react',
     name: 'React',
     render: () => (
-      <svg viewBox="0 0 148 48" height="48" width="148" aria-label="React">
+      <svg viewBox="0 0 148 48" height="28" width="86" aria-label="React">
         <g transform="translate(4, 0)">
           <ellipse cx="20" cy="24" rx="19" ry="7.2" fill="none" stroke="#61DAFB" strokeWidth="2.2" />
           <ellipse cx="20" cy="24" rx="19" ry="7.2" fill="none" stroke="#61DAFB" strokeWidth="2.2" transform="rotate(60 20 24)" />
@@ -33,7 +33,7 @@ const BRANDS = [
     id: 'nextjs',
     name: 'Next.js',
     render: () => (
-      <svg viewBox="0 0 148 48" height="48" width="148" aria-label="Next.js">
+      <svg viewBox="0 0 148 48" height="28" width="86" aria-label="Next.js">
         <defs>
           <linearGradient id="nextjs-diag-grad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#ffffff" stopOpacity="1" />
@@ -65,7 +65,7 @@ const BRANDS = [
     id: 'microsoft',
     name: 'Microsoft',
     render: () => (
-      <svg viewBox="0 0 162 48" height="48" width="162" aria-label="Microsoft">
+      <svg viewBox="0 0 162 48" height="28" width="95" aria-label="Microsoft">
         <g transform="translate(4, 11)">
           <rect x="0" y="0" width="12" height="12" fill="#F25022" />
           <rect x="14.5" y="0" width="12" height="12" fill="#7FBA00" />
@@ -90,7 +90,7 @@ const BRANDS = [
     id: 'aws',
     name: 'AWS',
     render: () => (
-      <svg viewBox="0 0 105 48" height="48" width="105" aria-label="AWS">
+      <svg viewBox="0 0 105 48" height="28" width="61" aria-label="AWS">
         <g transform="translate(2, 6)">
           <g fill="#232F3E">
             <path d="M19.5 21.8h-4.2l-.8 2.8h-3.8l5-15.6h4.2l5.1 15.6h-4.4l-1.1-2.8zm-3.4-3.2h2.6l-1.3-4.8-1.3 4.8z" />
@@ -113,7 +113,7 @@ const BRANDS = [
     id: 'github',
     name: 'GitHub',
     render: () => (
-      <svg viewBox="0 0 148 48" height="48" width="148" aria-label="GitHub">
+      <svg viewBox="0 0 148 48" height="28" width="86" aria-label="GitHub">
         <g transform="translate(4, 7)">
           <path
             d="M17 0C7.6 0 0 7.6 0 17c0 7.5 4.9 13.9 11.6 16.1.9.2 1.2-.4 1.2-.8v-3.1c-4.7 1-5.7-2-5.7-2-.8-2-1.9-2.5-1.9-2.5-1.5-1 .1-1 .1-1 1.7.1 2.6 1.7 2.6 1.7 1.5 2.6 4 1.8 4.9 1.4.2-1.1.6-1.8 1.1-2.3-3.8-.4-7.8-1.9-7.8-8.4 0-1.9.7-3.4 1.7-4.6-.2-.4-.7-2.2.2-4.5 0 0 1.4-.4 4.7 1.7 1.4-.4 2.8-.6 4.3-.6s2.9.2 4.3.6c3.3-2.2 4.7-1.7 4.7-1.7.9 2.3.4 4.1.2 4.5 1.1 1.2 1.7 2.7 1.7 4.6 0 6.5-4 8-7.8 8.4.6.5 1.2 1.6 1.2 3.1v4.6c0 .5.3 1 .1.2 1.2-.8 6.7-2.3 11.6-8.6 11.6-16.1C34 7.6 26.4 0 17 0z"
@@ -138,7 +138,7 @@ const BRANDS = [
     id: 'figma',
     name: 'Figma',
     render: () => (
-      <svg viewBox="0 0 136 48" height="48" width="136" aria-label="Figma">
+      <svg viewBox="0 0 136 48" height="28" width="79" aria-label="Figma">
         <g transform="translate(4, 7)">
           <path d="M5.7 34.2a5.7 5.7 0 0 0 5.7-5.7v-5.7H5.7a5.7 5.7 0 1 0 0 11.4z" fill="#0ACF83" />
           <path d="M0 17.1a5.7 5.7 0 0 0 5.7 5.7h5.7V11.4H5.7A5.7 5.7 0 0 0 0 17.1z" fill="#A259FF" />
@@ -164,7 +164,7 @@ const BRANDS = [
     id: 'nodejs',
     name: 'Node.js',
     render: () => (
-      <svg viewBox="0 0 152 48" height="48" width="152" aria-label="Node.js">
+      <svg viewBox="0 0 152 48" height="28" width="89" aria-label="Node.js">
         <g transform="translate(4, 8)">
           <path d="M16 0L31.5 9v18L16 36 .5 27V9L16 0z" fill="#5FA04E" />
           <path d="M16 1.8l13.9 8v16.4L16 34.2 2.1 26.2V9.8L16 1.8z" fill="#539E43" />
@@ -192,7 +192,7 @@ const BRANDS = [
     id: 'googlecloud',
     name: 'Google Cloud',
     render: () => (
-      <svg viewBox="0 0 198 48" height="48" width="198" aria-label="Google Cloud">
+      <svg viewBox="0 0 198 48" height="28" width="116" aria-label="Google Cloud">
         <g transform="translate(4, 9)">
           <path
             d="M19.5 7.8c-3.1 0-5.8 1.8-7.1 4.5C11.5 12.1 10.5 12 9.5 12 5.4 12 2 15.4 2 19.5S5.4 27 9.5 27h18.2c4 0 7.3-3.3 7.3-7.3 0-3.8-3-6.9-6.8-7.3-1.4-2.7-4.3-4.6-7.7-4.6z"
@@ -241,7 +241,7 @@ export default function TrustedBrands() {
   const isDraggingRef = useRef(false);
   const startXRef = useRef(0);
   const startOffsetRef = useRef(0);
-  const lastTimeRef = useRef(performance.now());
+  const lastTimeRef = useRef(0);
   const [isGrabbing, setIsGrabbing] = useState(false);
 
   // Measure single sequence width (distance between 1st item of set 1 and 1st item of set 2)
@@ -308,7 +308,9 @@ export default function TrustedBrands() {
       if (containerRef.current) {
         containerRef.current.setPointerCapture(e.pointerId);
       }
-    } catch (_) {}
+    } catch {
+      // Ignored if pointer capture is not supported
+    }
   };
 
   const handlePointerMove = (e) => {
@@ -335,7 +337,9 @@ export default function TrustedBrands() {
       if (containerRef.current && containerRef.current.hasPointerCapture(e.pointerId)) {
         containerRef.current.releasePointerCapture(e.pointerId);
       }
-    } catch (_) {}
+    } catch {
+      // Ignored if pointer capture is not supported
+    }
   };
 
   return (

@@ -35,17 +35,38 @@ export default function Blog() {
   return (
     <>
       <main className="wrap blog-redesign-page">
-        {/* 01. Hero Section */}
-        <section className="sec hero blog-hero-redesign">
+        {/* 01. Premium Two-Column Hero Section */}
+        <section className="sec hero blog-hero-sec hero-two-col-sec">
           <Header activePage="blog" />
-          <div className="hero-in">
-            <span className="tag">Engineering Insights</span>
-            <h1>
-              Systems, Architecture &amp; <span className="accent">Tech Perspectives</span>
-            </h1>
-            <p className="sm">
-              Practical engineering breakdowns, scalable cloud architectures, UI/UX systems, and product delivery frameworks written directly by the engineering team at Invsol Tech.
-            </p>
+          <div className="hero-container-card blog-hero-card">
+            <div className="hero-content-col">
+              <span className="tag">Engineering Insights</span>
+              <h1 className="hero-title">
+                Systems, Architecture &amp; <span className="accent">Tech Perspectives</span>
+              </h1>
+              <p className="hero-desc">
+                Practical engineering breakdowns, scalable cloud architectures, UI/UX systems, and product delivery frameworks written directly by the engineering team at Invsol Tech.
+              </p>
+              <div className="hero-btns" style={{ marginBottom: 0 }}>
+                <a className="btn btn-dark" href="#all-articles">
+                  Explore Articles{' '}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <Link className="btn light" to="/contact">
+                  Discuss a Topic
+                </Link>
+              </div>
+            </div>
+            <div className="hero-visual-col blog-visual-col">
+              <img
+                className="hero-3d-visual"
+                src="/assets/img/hero-real/hero-blog-real.jpg"
+                alt="Technical Writing & Engineering Insights Editorial Desk"
+                loading="eager"
+              />
+            </div>
           </div>
         </section>
 

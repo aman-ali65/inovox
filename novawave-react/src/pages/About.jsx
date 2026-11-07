@@ -13,50 +13,60 @@ export default function About() {
   return (
     <>
       <main className="wrap">
-        {/* Centered Hero without Hero Image */}
-        <section className="sec hero ">
+        {/* Premium Two-Column Hero Section */}
+        <section className="sec hero about-hero-sec hero-two-col-sec">
           <Header activePage="about" />
-          <div className="hero-in">
-            <span className="tag">Company Overview — Invsol Tech</span>
-            <h1>
-              Good Ideas Deserve Great <span className="accent">Digital Experiences</span>
-            </h1>
-            <p className="sm">
-              We are a creative digital agency focused on building modern products, memorable brands, and innovative solutions that help businesses grow in a digital world.
-            </p>
-            <div className="btns">
-              <Link className="btn " to="/contact">
-                Let's Talk About Your Project{' '}
-                <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-              <Link className="btn light" to="/services">
-                Our Services{' '}
-                <span className="play">
-                  <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
+          <div className="hero-container-card about-hero-card">
+            <div className="hero-content-col">
+              <span className="tag">Company Overview — Invsol Tech</span>
+              <h1 className="hero-title">
+                Good Ideas Deserve Great <span className="accent">Digital Experiences</span>
+              </h1>
+              <p className="hero-desc">
+                We are a creative digital agency focused on building modern products, memorable brands, and innovative solutions that help businesses grow in a digital world.
+              </p>
+              <div className="hero-btns">
+                <Link className="btn btn-dark" to="/contact">
+                  Let's Talk About Your Project{' '}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
-                </span>
-              </Link>
+                </Link>
+                <Link className="btn light" to="/services">
+                  Our Services{' '}
+                  <span className="play">
+                    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+              <div className="hero-stats">
+                <div className="hero-stat-item">
+                  <CountUp value="120+" />
+                  <span>Projects Completed</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="80+" />
+                  <span>Happy Clients</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="12+" />
+                  <span>Awards Won</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="8" />
+                  <span>Years Experience</span>
+                </div>
+              </div>
             </div>
-            <div className="stats">
-              <div>
-                <CountUp value="120+" />
-                <span>Projects Completed</span>
-              </div>
-              <div>
-                <CountUp value="80+" />
-                <span>Happy Clients</span>
-              </div>
-              <div>
-                <CountUp value="12+" />
-                <span>Awards Won</span>
-              </div>
-              <div>
-                <CountUp value="8" />
-                <span>Years Experience</span>
-              </div>
+            <div className="hero-visual-col about-visual-col">
+              <img
+                className="hero-3d-visual"
+                src="/assets/img/hero-real/hero-about-real.jpg"
+                alt="UX Architecture & Digital User Journey Mapping"
+                loading="eager"
+              />
             </div>
           </div>
         </section>

@@ -36,50 +36,60 @@ export default function Home() {
   return (
     <>
       <main className="wrap">
-        {/* Centered Hero Section without Hero Image */}
-        <section className="sec hero home">
+        {/* Premium Two-Column Hero Section */}
+        <section className="sec hero home hero-two-col-sec">
           <Header activePage="home" />
-          <div className="hero-in">
-            <span className="tag">Creative Digital Agency</span>
-            <h1>
-              We Design Experiences That <span className="accent">Inspire &amp; Convert</span>
-            </h1>
-            <p className="sm">
-              We blend creativity, strategy, and technology to build digital experiences that elevate brands and drive measurable business results.
-            </p>
-            <div className="btns">
-              <Link className="btn " to="/contact">
-                Explore Our Solutions{' '}
-                <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-              <Link className="btn light" to="/services">
-                Our Services{' '}
-                <span className="play">
-                  <svg className="i " viewBox="0 0 24 24" aria-hidden="true">
+          <div className="hero-container-card">
+            <div className="hero-content-col">
+              <span className="tag">Creative Digital Agency</span>
+              <h1 className="hero-title">
+                We Design Experiences That <span className="accent">Inspire &amp; Convert</span>
+              </h1>
+              <p className="hero-desc">
+                We blend creativity, strategy, and technology to build digital experiences that elevate brands and drive measurable business results.
+              </p>
+              <div className="hero-btns">
+                <Link className="btn btn-dark" to="/portfolio">
+                  Explore Our Work{' '}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
-                </span>
-              </Link>
+                </Link>
+                <Link className="btn light" to="/services">
+                  Our Services{' '}
+                  <span className="play">
+                    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+              <div className="hero-stats">
+                <div className="hero-stat-item">
+                  <CountUp value="120+" />
+                  <span>Projects Completed</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="80+" />
+                  <span>Happy Clients</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="12+" />
+                  <span>Awards Won</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="8" />
+                  <span>Years Experience</span>
+                </div>
+              </div>
             </div>
-            <div className="stats">
-              <div>
-                <CountUp value="120+" />
-                <span>Projects Completed</span>
-              </div>
-              <div>
-                <CountUp value="80+" />
-                <span>Happy Clients</span>
-              </div>
-              <div>
-                <CountUp value="12+" />
-                <span>Awards Won</span>
-              </div>
-              <div>
-                <CountUp value="8" />
-                <span>Years Experience</span>
-              </div>
+            <div className="hero-visual-col">
+              <img
+                className="hero-3d-visual"
+                src="/assets/img/hero-real/hero-home-real.jpg"
+                alt="Collaborative Software Engineering & Product Strategy Session"
+                loading="eager"
+              />
             </div>
           </div>
         </section>

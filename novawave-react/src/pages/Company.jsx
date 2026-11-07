@@ -101,51 +101,61 @@ export default function Company() {
     <>
       <main className="wrap company-page">
         {/* 1. HERO SECTION */}
-        <section className="sec hero company-hero-section">
+        <section className="sec hero company-hero-section hero-two-col-sec">
           <Header activePage="company" />
-          <div className="hero-in">
-            <span className="tag">COMPANY</span>
-            <h1>
-              We Are <span className="accent">Invsol</span>
-            </h1>
-            <p className="sm">
-              A technology-driven software company focused on building meaningful digital experiences, scalable software solutions, and innovative products that help businesses move forward.
-            </p>
-            <p className="company-hero-subtag">
-              <em>The Invsol Tech Team – Building Technology with Purpose.</em>
-            </p>
-            <div className="btns">
-              <Link className="btn sm blue" to="/contact">
-                Start a Project{' '}
-                <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-              <Link className="btn sm light" to="/services">
-                Explore Our Services{' '}
-                <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
+          <div className="hero-container-card company-hero-card">
+            <div className="hero-content-col">
+              <span className="tag">COMPANY</span>
+              <h1 className="hero-title">
+                We Are <span className="accent">Invsol</span>
+              </h1>
+              <p className="hero-desc">
+                A technology-driven software company focused on building meaningful digital experiences, scalable software solutions, and innovative products that help businesses move forward.
+              </p>
+              <p className="company-hero-subtag">
+                <em>The Invsol Tech Team – Building Technology with Purpose.</em>
+              </p>
+              <div className="hero-btns">
+                <Link className="btn btn-dark" to="/contact">
+                  Start a Project{' '}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                <Link className="btn light" to="/services">
+                  Explore Our Services{' '}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
 
-            <div className="stats">
-              <div>
-                <CountUp value="120+" />
-                <span>Projects Completed</span>
+              <div className="hero-stats">
+                <div className="hero-stat-item">
+                  <CountUp value="120+" />
+                  <span>Projects Completed</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="80+" />
+                  <span>Happy Clients</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="12+" />
+                  <span>Awards Won</span>
+                </div>
+                <div className="hero-stat-item">
+                  <CountUp value="8" />
+                  <span>Years Experience</span>
+                </div>
               </div>
-              <div>
-                <CountUp value="80+" />
-                <span>Happy Clients</span>
-              </div>
-              <div>
-                <CountUp value="12+" />
-                <span>Awards Won</span>
-              </div>
-              <div>
-                <CountUp value="8" />
-                <span>Years Experience</span>
-              </div>
+            </div>
+            <div className="hero-visual-col company-visual-col">
+              <img
+                className="hero-3d-visual"
+                src="/assets/img/hero-real/hero-company-invsol.jpg"
+                alt="Invsol Tech — Innovate, Develop, Transform"
+                loading="eager"
+              />
             </div>
           </div>
         </section>

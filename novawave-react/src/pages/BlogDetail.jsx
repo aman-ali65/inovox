@@ -55,26 +55,25 @@ export default function BlogDetail() {
           <Header activePage="blog" />
 
 
-          {/* Article Header */}
+          {/* Article Header & Cover Card */}
           <FadeInSection>
-            <header className="blog-detail-header">
-              <div className="blog-detail-meta-pill-row">
-                <span className="tag">{article.catLabel}</span>
+            <div className="blog-detail-hero-card">
+              <header className="blog-detail-header">
+                <div className="blog-detail-meta-pill-row">
+                  <span className="tag">{article.catLabel}</span>
+                </div>
+
+                <h1 className="blog-detail-title">{article.title}</h1>
+                <p className="blog-detail-lead">{article.desc}</p>
+              </header>
+
+              <div className="blog-detail-cover-container">
+                <img
+                  src={article.img}
+                  alt={article.title}
+                  className="blog-detail-cover-img"
+                />
               </div>
-
-              <h1 className="blog-detail-title">{article.title}</h1>
-              <p className="blog-detail-lead">{article.desc}</p>
-            </header>
-          </FadeInSection>
-
-          {/* Main Cover Image */}
-          <FadeInSection>
-            <div className="blog-detail-cover-container">
-              <img
-                src={article.img}
-                alt={article.title}
-                className="blog-detail-cover-img"
-              />
             </div>
           </FadeInSection>
         </section>
